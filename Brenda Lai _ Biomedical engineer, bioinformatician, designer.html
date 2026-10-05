@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brenda Lai | Biomedical engineer, bioinformatician, designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3F6;--ink:#12202E;--soft:#4B5B6B;--line:#CBD7E0;--blue:#2F4BD8;--mag:#C8176F;--card:#F9FBFC;
+ --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--body:"Newsreader",Georgia,serif;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1923;--ink:#E6EEF4;--soft:#9FB0BF;--line:#26384A;--blue:#8CA0FF;--mag:#FF72B6;--card:#152330}}
+:root[data-theme="dark"]{--bg:#0F1923;--ink:#E6EEF4;--soft:#9FB0BF;--line:#26384A;--blue:#8CA0FF;--mag:#FF72B6;--card:#152330}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.125rem/1.65 var(--body)}
+a{color:var(--blue)}
+a:focus-visible,summary:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--mag);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:1.1rem;overflow-x:auto;padding-top:.7rem;padding-bottom:.7rem;font:600 .95rem var(--head)}
+nav a{color:var(--ink);text-decoration:none;white-space:nowrap}
+nav a:hover{color:var(--mag)}
+header{padding:4rem 0 3rem}
+h1{font:800 clamp(3.2rem,12vw,6.5rem)/.95 var(--head);letter-spacing:-.03em;margin:0 0 1rem}
+.roles,.langs{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0 0 .8rem}
+.roles li,.langs li{margin:0;padding:.3rem .8rem;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.roles li{font:500 1.05rem var(--head);border-color:var(--ink)}
+.langs{margin-bottom:2rem}
+.langs li{color:var(--soft);font-size:.95rem}
+.hero{display:flex;gap:2.5rem;align-items:center;flex-wrap:wrap}
+.hero ul{list-style:none;margin:0;padding:0;font:500 1.1rem var(--head)}
+.hero li{margin:.35rem 0;display:flex;align-items:center;gap:.6rem}
+.hero li a{color:var(--ink);text-decoration:none}
+.hero li a:hover{color:var(--mag)}
+.dot{width:.8rem;height:.8rem;border-radius:50%;flex:none}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:800 2rem/1.1 var(--head);letter-spacing:-.02em;margin:0 0 1.5rem}
+h3{font:600 1.2rem var(--head);margin:0}
+.row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:baseline}
+.when{color:var(--soft);font:500 .95rem var(--head)}
+.item{margin:0 0 2rem}
+.item p,.item ul{margin:.4rem 0}
+ul{padding-left:1.2rem}
+li{margin:.25rem 0}
+.tags{color:var(--soft);font-size:1rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:0 0 .8rem}
+summary{cursor:pointer;padding:1rem 1.2rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:600 1.4rem var(--head);color:var(--mag);margin-left:auto}
+details[open] summary::after{content:"\2212"}
+details>div{padding:0 1.2rem 1rem}
+.stat{color:var(--soft);font:500 .95rem var(--head)}
+.course{color:var(--soft);font-size:1rem;margin-top:.8rem}
+form{display:grid;gap:1rem;grid-template-columns:1fr 1fr}
+form .full{grid-column:1/-1}
+label{display:block;font:600 .9rem var(--head);margin-bottom:.3rem}
+input,textarea{width:100%;font:inherit;padding:.65rem .8rem;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+button{font:600 1rem var(--head);background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:.8rem 1.4rem;cursor:pointer}
+button:hover{background:var(--mag);color:#fff}
+.grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem .8rem}
+.grid li{margin:0}
+.tile{all:unset;box-sizing:border-box;display:block;width:100%;text-align:center;cursor:pointer}
+.tile:focus-visible{outline:3px solid var(--mag);outline-offset:4px;border-radius:22%}
+.icon{display:block;aspect-ratio:1;border-radius:22%;background:var(--card);border:1px solid var(--line);overflow:hidden;display:grid;place-items:center;font-size:clamp(1.6rem,7vw,3rem);transition:transform .15s}
+.tile:hover .icon{transform:scale(1.05)}
+.icon img{width:100%;height:100%;object-fit:cover}
+.cap{display:block;margin-top:.45rem;font:500 .8rem/1.2 var(--head)}
+dialog{border:1px solid var(--line);border-radius:16px;background:var(--bg);color:var(--ink);max-width:min(560px,92vw);padding:1.4rem;font:1.05rem/1.55 var(--body)}
+dialog::backdrop{background:rgba(10,20,30,.55)}
+dialog h3{margin:0 0 .5rem}
+dialog .ph{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem;margin:1rem 0}
+dialog .ph img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+dialog .ph .slot{aspect-ratio:1;border:1px dashed var(--line);border-radius:8px;display:grid;place-items:center;color:var(--soft);font-size:.8rem;text-align:center;padding:.3rem}
+dialog .acts{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+@media(max-width:560px){.cap{font-size:.7rem}}
+footer{padding:2rem 0 3rem;color:var(--soft);font-size:.95rem}
+.todo{background:color-mix(in srgb,var(--mag) 14%,transparent);padding:0 .25em;border-radius:3px}
+@media(max-width:560px){form{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<nav aria-label="Sections"><div class="wrap">
+<a href="#intro">Intro</a><a href="#education">Education</a><a href="#technical">Technical</a><a href="#work">Work</a><a href="#other">Other</a><a href="#awards">Awards</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header><div class="wrap">
+<h1>Brenda Lai</h1>
+<ul class="roles"><li>Biomedical engineer</li><li>Bioinformatician</li><li>UI/UX designer</li><li>Scientific writer</li></ul>
+<ul class="langs"><li>English (native)</li><li>Mandarin (native)</li><li>Japanese (intermediate)</li><li>Cantonese (novice)</li></ul>
+<div class="hero">
+<ul>
+<li><span class="dot" style="background:#2F4BD8"></span><a href="#t-mol">Molecular engineering</a></li>
+<li><span class="dot" style="background:#C8176F"></span><a href="#t-bio">Bioinformatics</a></li>
+<li><span class="dot" style="background:#12202E;box-shadow:0 0 0 1px var(--soft)"></span><a href="#t-data">Data analysis</a></li>
+<li><span class="dot" style="background:#7F93A5"></span><a href="#t-ux">UI/UX design</a></li>
+</ul>
+</div>
+</div></header>
+
+<main class="wrap">
+
+<section id="intro">
+<h2>Intro</h2>
+<p><span class="todo">Draft coffee pitch, replace with your own words:</span> I build things at the edge of biology and software, from cloning vectors at the bench to training models and designing the pages that explain the work. I'm finishing an MEng-level year in Biomedical Engineering at Imperial College London after a degree in Biomolecular Engineering and Bioinformatics at UC Santa Cruz.</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="item">
+<div class="row"><h3>Imperial College London, Biomedical Engineering (Biomaterials)</h3><span class="when">Sept 2025 to Sept 2026</span></div>
+<p class="tags">Bioengineering Society, FemTech, Art Society</p>
+</div>
+<div class="item">
+<div class="row"><h3>University of California, Santa Cruz, Biomolecular Engineering and Bioinformatics</h3><span class="when">Sept 2021 to Aug 2024</span></div>
+<ul>
+<li>Honors in Major; early graduation while carrying the second heaviest course workload at UCSC</li>
+<li>Dean's Award for Engineering Excellence ($100 prize, top 50 undergraduate research projects)</li>
+<li>Dean's Honor List, winter and spring 2024</li>
+<li>iGEM 2024 Wiki Lead</li>
+</ul>
+<p class="tags">Taiwanese Student Association (TSA), Women in Science Society, Women's Wellness Club</p>
+</div>
+<div class="item">
+<div class="row"><h3>TES, International Baccalaureate bilingual diploma (English and Mandarin)</h3><span class="when">2017 to 2021</span></div>
+<ul>
+<li>Top grade (7) in HL Chemistry and HL Analysis and Approaches Math; 6 in Physics</li>
+<li>Duke of Edinburgh's International Award, Bronze and Silver</li>
+<li>Varsity volleyball, basketball and football</li>
+</ul>
+</div>
+<div class="item">
+<div class="row"><h3>Boston University AIM, Introduction to Experimental Psychology</h3><span class="when">2019</span></div>
+<p>A three-week research course on designing and running experiments, collecting and analyzing data, and presenting results.</p>
+</div>
+</section>
+
+<section id="technical">
+<h2>Technical experience</h2>
+
+<details id="t-mol" open><summary><h3>Molecular engineering</h3><span class="stat">11 projects, 5 years</span></summary><div>
+<ul>
+<li>Molecular CAD modelling with UCSF Chimera and PyMOL; DNA visualization with SnapGene, Geneious, ApE and Jalview</li>
+<li>Restriction enzyme cloning, Golden Gate assembly and Gibson assembly</li>
+<li>Designed vectors for E. coli and cyanobacteria integration</li>
+<li>Troubleshot full cloning workflows: plasmid purification, vector preparation, ligation, transformation, screening and sequencing</li>
+<li>Designed and transfected plasmid DNA into NIH3T3 and A549 cells</li>
+<li>Troubleshot cell workflows from seeding and passaging to microscopy and flow cytometry, with transfection efficiency assessed by fluorescence microscopy</li>
+</ul>
+<p class="course">Courses: BIOE70032 Tissue Engineering and Regenerative Medicine (Imperial); BME177 Engineering Stem Cells (UCSC)</p>
+</div></details>
+
+<details id="t-bio"><summary><h3>Bioinformatics</h3><span class="stat">5 projects, 4 years</span></summary><div>
+<ul>
+<li>Self-taught Python; wrote three tools from scratch: a DNA sequence translator, an ORF finder and a unique subsequence analyzer</li>
+<li>Ran genomics processing commands in UNIX with <a href="https://github.com/StanfordBioinformatics/Hummingbird">Hummingbird</a>-based workflows</li>
+<li>Built a tool that edits vector sequences through synonymous mutations for better compatibility with non-model restriction-modification systems</li>
+<li>Created a machine learning workflow with AlphaFold-based modelling for thermostable recombinant protein discovery</li>
+<li>Designed a PyTorch tool that identifies textile blends to aid biological degradation</li>
+</ul>
+<p class="course">Courses: BME110 Computational Biology Tools; BME160 Research Programming in the Life Sciences; BME163 Applied Visualization and Analysis of Scientific Data (all UCSC)</p>
+</div></details>
+
+<details id="t-data"><summary><h3>Data analysis and processing</h3><span class="stat">8 projects, 3 years</span></summary><div>
+<ul>
+<li>Python visualization with Pandas, StatsModels, NumPy, SciPy and Matplotlib <span class="todo">add figure images here</span></li>
+<li>Produced 3D-printable CAD files (Autodesk Fusion compatible) of brain white and gray matter from MRI, using a FreeSurfer-based workflow</li>
+<li>Mapped 1,000+ unstructured compounds to metabolic pathways in KEGG and visualized them as heatmaps</li>
+<li>Turned unstructured biological data into a structured dataset to support bootstrap-based analysis</li>
+</ul>
+<p class="course">Courses: BIOE70037 Applied Inferential Statistics (Imperial); STAT206 Applied Bayesian Statistics and STAT132 Classical and Bayesian Inference (UCSC)</p>
+</div></details>
+
+<details id="t-ux"><summary><h3>UI/UX design</h3><span class="stat">2 years</span></summary><div>
+<ul>
+<li>Self-taught developer: HTML/CSS/JS, React, Figma, Procreate and Adobe Illustrator</li>
+<li>Project 1: <a href="https://2024.igem.wiki/ucsc/">iGEM 2024 UCSC wiki</a></li>
+<li>Project 2: <a href="https://2025.igem.wiki/gems-taiwan/">iGEM 2025 GEMS Taiwan wiki</a></li>
+<li>Project 3: the page you're looking at</li>
+</ul>
+</div></details>
+
+<details id="t-reg"><summary><h3>Medical regulation</h3><span class="stat">1 year</span></summary><div>
+<ul>
+<li>ISO 13485 (medical devices), ISO 14971 (risk management), IEC 60601 (electrical safety)</li>
+<li>Documentation to EU and UK standards in Imperial coursework (grade: 95%)</li>
+</ul>
+</div></details>
+</section>
+
+<section id="work">
+<h2>Professional experience</h2>
+<div class="item">
+<div class="row"><h3>GEMS Taiwan, Dry Lab Research Instructor</h3><span class="when">Feb 2025 to Feb 2026</span></div>
+<ul>
+<li>Full-time role (1pm to 9pm) with occasional weekends; project management and timelining</li>
+<li>Taught students aged 13 to 18 molecular modelling, HTML/CSS/JS/React, and scientific writing following GLP</li>
+<li>Tutored AP Biology, Chemistry, Math and Geography</li>
+<li>Kept stakeholders informed and stayed on call 24/7</li>
+</ul>
+</div>
+<div class="item">
+<div class="row"><h3>Taipei Veterans General Hospital, Research Assistant</h3><span class="when">Dec 2024 to Jan 2025</span></div>
+<ul>
+<li>Full-time role (9am to 3pm)</li>
+<li>Ran PCR and RT-PCR and analyzed the results</li>
+<li>Analyzed epidermal histology</li>
+<li>Harvested cells from mice; maintained and passaged multi-cell cultures</li>
+</ul>
+</div>
+<div class="item">
+<div class="row"><h3>Saltikov Lab, UCSC, Bioinformatician</h3><span class="when">Oct 2024 to Nov 2024</span></div>
+<ul><li>Part-time, mostly remote; analyzed and visualized unstructured data to find trends</li></ul>
+</div>
+<div class="item">
+<div class="row"><h3>Bernick Lab, UCSC, iGEM team</h3><span class="when">Nov 2023 to Oct 2025</span></div>
+<ul>
+<li>Full-time role with weekend and holiday obligations</li>
+<li>Led wiki documentation and the GitHub pipeline for the 2024 UCSC iGEM team</li>
+<li>Prepared and maintained lab conditions, restocked reagents and managed the lab schedule</li>
+<li>Supported the wet lab workflow when needed</li>
+</ul>
+</div>
+</section>
+
+<section id="other">
+<h2>Other experience</h2>
+<div class="item">
+<div class="row"><h3>National Taiwan University Hospital, Summer Volunteer</h3><span class="when">2017 to 2022</span></div>
+<p>Supported patients when they needed it, mostly through communication, plus equipment delivery and bookkeeping.</p>
+</div>
+<div class="item">
+<div class="row"><h3>ZNOral Care, Fellowship</h3><span class="when">Jul to Sep 2017</span></div>
+<p>Shadowing fellowship on the operations and management of a local, privately owned dental practice.</p>
+</div>
+</section>
+
+<section id="awards">
+<h2>Awards</h2>
+<div class="item">
+<h3>Quake-Resistant Certificate, IDEERS 2019</h3>
+<p class="tags">International Competition to Design Earthquake Resistant Model Buildings, Taiwan</p>
+<ul>
+<li>Inspired by Taiwan's frequent earthquakes and structural solutions like Taipei 101</li>
+<li>Built core problem-solving and engineering methods</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<ul class="grid" id="grid"></ul>
+<dialog id="dlg"><h3 id="dt"></h3><p id="dd"></p><div class="ph" id="dp"></div><div class="acts"><a id="dl" target="_blank" rel="noopener"></a><a id="dv" target="_blank" rel="noopener"></a><button id="dx" type="button">Close</button></div></dialog>
+</section>
+
+<section id="contact">
+<h2>Get in touch</h2>
+<p>If you have a project you think I'd be a good fit for, let me know. I'm open to collaboration and general chitchat.</p>
+<form id="f">
+<div><label for="fn">First name</label><input id="fn" required autocomplete="given-name"></div>
+<div><label for="ln">Last name</label><input id="ln" required autocomplete="family-name"></div>
+<div><label for="em">Email</label><input id="em" type="email" required autocomplete="email"></div>
+<div><label for="ph">Phone (optional)</label><input id="ph" type="tel" autocomplete="tel"></div>
+<div class="full"><label for="msg">Message</label><textarea id="msg" rows="5" required></textarea></div>
+<div class="full"><button type="submit">Send message</button></div>
+</form>
+</section>
+</main>
+
+<footer><div class="wrap">Brenda Lai</div></footer>
+
+<script>
+// Opens the visitor's email app with the message filled in. Replace the address below.
+var TO="your-email@example.com";
+document.getElementById("f").addEventListener("submit",function(e){
+ e.preventDefault();
+ var v=function(i){return document.getElementById(i).value};
+ var body=v("msg")+"\n\nFrom: "+v("fn")+" "+v("ln")+"\nEmail: "+v("em")+(v("ph")?"\nPhone: "+v("ph"):"");
+ location.href="mailto:"+TO+"?subject="+encodeURIComponent("Website message from "+v("fn")+" "+v("ln"))+"&body="+encodeURIComponent(body);
+});
+// Open the matching skill panel when a plasmid link or nav link points to it.
+function openHash(){var d=document.querySelector(location.hash+"[open], details"+location.hash);if(d&&d.tagName==="DETAILS")d.open=true}
+window.addEventListener("hashchange",function(){if(/^#t-/.test(location.hash))openHash()});
+
+// PROJECTS GALLERY. Edit this list: drive = Google Drive folder link, photos = image URLs/data URIs, link = project site.
+var P=[
+{t:"Brain phantom",e:"\u{1F9E0}",d:"A fabricated brain phantom to model temporal interference.",drive:"",photos:[],link:""},
+{t:"Biomimetics brochure",e:"\u{1F41D}",d:"How the bee waggle dance inspires technology.",drive:"",photos:[],link:""},
+{t:"Brain patch",e:"\u{1FA79}",d:"Biomaterials presentation on a neuroreparative brain patch for regeneration after traumatic brain injury.",drive:"",photos:[],link:""},
+{t:"Med device coursework",e:"\u{1FA7A}",d:"Medical device coursework documented to EU and UK standards.",drive:"",photos:[],link:""},
+{t:"iGEM 2025",e:"\u267B\uFE0F",d:"GEMS Taiwan: textile-degrading enzymes aimed at the global waste problem.",drive:"",photos:[],link:"https://2025.igem.wiki/gems-taiwan/"},
+{t:"iGEM 2024",e:"\u{1F30A}",d:"UCSC: DHA from seaweed, to improve healthcare accessibility.",drive:"",photos:[],link:"https://2024.igem.wiki/ucsc/"},
+{t:"Data viz",e:"\u{1F4CA}",d:"Data visualization portfolio.",drive:"",photos:[],link:""},
+{t:"Code",e:"\u{1F4BB}",d:"Bioinformatics code on GitHub.",drive:"",photos:[],link:""},
+{t:"brendaabetas",e:"\u{1F9D7}",d:"Bouldering Instagram account.",drive:"",photos:[],link:""},
+{t:"Yarn",e:"\u{1F9F6}",d:"Handmade yarn items for sale.",drive:"",photos:[],link:""}];
+var g=document.getElementById("grid"),dlg=document.getElementById("dlg");
+P.forEach(function(p,i){var li=document.createElement("li");
+ var b=document.createElement("button");b.className="tile";b.type="button";
+ b.innerHTML='<span class="icon"><span>'+p.e+'</span></span><span class="cap"></span>';
+ b.querySelector(".cap").textContent=p.t;
+ if(p.photos[0]){var im=new Image();im.alt="";im.src=p.photos[0];im.onload=function(){var ic=b.querySelector(".icon");ic.textContent="";ic.appendChild(im)};}
+ b.onclick=function(){open_(p)};li.appendChild(b);g.appendChild(li)});
+function open_(p){document.getElementById("dt").textContent=p.t;document.getElementById("dd").textContent=p.d;
+ var ph=document.getElementById("dp");ph.textContent="";
+ if(p.photos.length){p.photos.forEach(function(u){var im=new Image();im.alt=p.t+" photo";im.src=u;ph.appendChild(im)})}
+ else{ph.innerHTML='<div class="slot">Photos go here</div><div class="slot">Photos go here</div><div class="slot">Photos go here</div>'}
+ var dl=document.getElementById("dl"),dv=document.getElementById("dv");
+ dl.hidden=!p.drive;dl.href=p.drive||"#";dl.textContent="Open photos in Google Drive";
+ dv.hidden=!p.link;dv.href=p.link||"#";dv.textContent="Visit project";
+ dlg.showModal()}
+document.getElementById("dx").onclick=function(){dlg.close()};
+dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brenda Lai °❀⋆.ೃ࿔*:･ About Me </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik+Maze&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+/* imports!!! */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* removes the default 8px gap */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.rubik-text {
+  font-family: "Rubik Maze", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 6em;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #178a3d;
+}
+
+/* nav !!! */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps the nav above other content when scrolling */
+
+  width: 100%;
+  background-color: #210124;
+  padding: 16px 50px;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+
+nav a {
+  color: white; /* matches your block background */
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent; /* reserves space so hover doesn't shift layout */
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #750D37;
+}
+
+/* body !!! BLOCK & WRAP (for images)*/
+.block {
+  width: 100%;
+  padding: 40px 0 ;
+
+  display: flex;
+  flex-direction: column;  /* stacks children vertically */
+  align-items: center;     /* now centers horizontally */
+  justify-content: center; /* now centers vertically (only visible if block has extra height) */
+  gap: 80px;               /* space between the stacked boxes */
+}
+
+.block .wrap {
+  width: 80%; 
+  display: flex; 
+  align-items: center; 
+  gap: 32px; 
+  flex-wrap: wrap;
+}
+
+
+.block .wrap .content {
+  width: auto;
+  flex: 1 1 0;      /* text takes all remaining space */
+  min-width: 0;     /* lets long words/headings shrink instead of overflowing */
+}
+
+.block .wrap img {
+  flex: 0 0 30%;    /* image is 30% of the row, so it scales with the screen */
+  max-width: 320px; /* but never gets huge on wide monitors */
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+  .block .wrap {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .block .wrap .content {
+    flex: none;
+    width: 100%;
+  }
+
+  .block .wrap img {
+    flex: none; 
+    width: 60%;
+    max-width: 260px;
+  }
+}
+
+/* body!!!! CONTENT */
+.content {
+  width: 80%;
+  text-align: left;
+}
+
+.content h3{
+  font-size: x-large;
+}
+
+.content .title {
+  display: inline-block; 
+  border: 2px solid currentColor; 
+  color: #B3DEC1; 
+  border-radius: 999px; 
+  padding: 4px 16px; 
+  margin: 0 8px 8px 0;
+}
+
+.content .title:hover,
+.content .title:focus-visible {
+  color: #3bc469;
+}
+
+
+</style>
+
+<nav>
+  <a href="#education">Education</a> <a href="#experience">Experience</a> <a href="#award">Awards</a> <a href="#project">Research</a> <a href="#contact">Contact</a>
+</nav>
+
+<body>
+<section class="block" id="top" style="background-color: #FEFFFE;">
+  <div class="wrap">
+    <div class="content">
+      <h1 class="rubik-text" style="padding-bottom: 0; margin-bottom: 0;">Brenda</h1> <h1 class="rubik-text" style="margin-top: 0; padding-top: 0;">Yu Chuen Lai</h1>
+      <a class="title">Biomedical Engineer</a> <a class="title">Bioinformatician</a> <a class="title">UI/UX Designer</a> <a class="title">Scientific writing</a>
+    
+      <p>Biomedical engineer with experience in biomaterials, molecular engineering, and computational modelling, focused on reducing the cost, waste, and animal use of biomedical research. Projects span synthetic biology for lower-cost infant formula, machine-learning-guided enzyme design with wet-lab validation for textile biodegradation, and brain phantom models that reduce reliance on human and animal testing. Skilled in academic research, data analysis & visualization, and scientific communication, with GMP-aligned research experience. Driven to make science less wasteful, healthcare more accessible, and discovery more collaborative.</p>
+
+       <p style="font-size: small; color: gray;">Languages: English (native), Mandarin (native), Japanese (intermediate), Cantonese (novice)</p>
+    </div>
+    <img src="placeholder.png" alt="profile-pic">
+  </div>
+</section>
+
+<section class="block" id="project" style="background-color: #750D37; color: white;">
+  <div class="content">
+    <h3>Projects</h3>
+  </div>
+</section>
+
+<section class="block" id="education" style="background-color: #E5FCF5;">
+  <div class="content">
+    <h3>Education</h3>
+  </div>
+</section>
+
+<section class="block" id="experience" style="background-color: #B3DEC1;">
+  <div class="content">
+    <h3>Technical Experience</h3>
+    <p> test test</p>
+  </div>
+
+  <div class="content">
+    <h3>Professional Experience</h3>
+    <p> lets say today the paragraph gets slightly longer how does the compiler react</p>
+  </div>
+
+  <div class="content">
+    <h3>Volunteer & Intern Experience</h3>
+    <p>hopefully this is enough space in between ahh haha</p>
+  </div>
+
+</section>
+
+<section class="block" id="award" style="background-color: #FEFFFE;">
+  <div class="content">
+    <h3>Awards</h3>
+  </div>
+</section>
+
+<section class="block" id="contact" style="background-color: #210124; color: white;">
+  <div class="content">
+    <h3>Contacts</h3>
+  </div>
+</section>
+</body>
+</html>
