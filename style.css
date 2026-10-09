@@ -1,1 +1,131 @@
 
+/* imports!!! */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* removes the default 8px gap */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.rubik-text {
+  font-family: "Rubik Maze", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 5em;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #FEFFFE;
+}
+
+/* nav !!! */
+nav {
+  position: fixed;   /* changed from sticky so the gradient shows behind it */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 50px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+
+nav a {
+  color: #210124; /* matches your block background */
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent; /* reserves space so hover doesn't shift layout */
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #750D37;
+}
+
+/* body !!! BLOCK & WRAP (for images)*/
+.block {
+  width: 100%;
+  padding: 40px 0 ;
+
+  display: flex;
+  flex-direction: column;  /* stacks children vertically */
+  align-items: center;     /* now centers horizontally */
+  justify-content: center; /* now centers vertically (only visible if block has extra height) */
+  gap: 100px;               /* space between the stacked boxes */
+}
+
+.block .wrap {
+  width: 80%; 
+  display: flex; 
+  align-items: center; 
+  gap: 32px; 
+  flex-wrap: wrap;
+}
+
+
+.block .wrap .content {
+  width: auto;
+  flex: 1 1 0;      /* text takes all remaining space */
+  min-width: 0;     /* lets long words/headings shrink instead of overflowing */
+}
+
+.block .wrap img {
+  flex: 0 0 30%;    /* image is 30% of the row, so it scales with the screen */
+  max-width: 320px; /* but never gets huge on wide monitors */
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+  .block .wrap {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .block .wrap .content {
+    flex: none;
+    width: 100%;
+  }
+
+  .block .wrap img {
+    flex: none; 
+    width: 60%;
+    max-width: 260px;
+  }
+}
+
+/* body!!!! CONTENT */
+.content {
+  width: 80%;
+  text-align: left;
+}
+
+.content h3{
+  font-size: x-large;
+}
+
+.content .title {
+  display: inline-block; 
+  border: 2px solid currentColor; 
+  color: #B3DEC1; 
+  border-radius: 999px; 
+  padding: 4px 16px; 
+  margin: 0 8px 8px 0;
+}
+
+.content .title:hover,
+.content .title:focus-visible {
+  color: #3bc469;
+}
