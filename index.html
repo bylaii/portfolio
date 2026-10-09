@@ -3,203 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brenda Lai °❀⋆.ೃ࿔*:･ About Me </title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik+Maze&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<title>Brenda Lai</title>
+<link rel="stylesheet" href="style.css">
+<link rel="script" href="script.js">
 </head>
-
-<style>
-/* imports!!! */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0; /* removes the default 8px gap */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.rubik-text {
-  font-family: "Rubik Maze", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 4em;
-  font-weight: 300;
-  font-style: normal;
-  margin-bottom: 20px;
-  color: #178a3d;
-}
-
-/* nav !!! */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* keeps the nav above other content when scrolling */
-
-  width: 100%;
-  background-color: #FEFFFE; /* 210124 */
-  padding: 10px 50px;
-
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px 28px;
-}
-
-nav a {
-  color: #210124; /* matches your block background */
-  text-decoration: none;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  padding: 4px 0;
-  border-bottom: 2px solid transparent; /* reserves space so hover doesn't shift layout */
-  transition: border-color 0.2s, color 0.2s;
-}
-
-nav a:hover,
-nav a:focus-visible {
-  color: #750D37;
-}
-
-/* body !!! BLOCK & WRAP (for images)*/
-.block {
-  width: 100%;
-  padding: 40px 0 ;
-
-  display: flex;
-  flex-direction: column;  /* stacks children vertically */
-  align-items: center;     /* now centers horizontally */
-  justify-content: center; /* now centers vertically (only visible if block has extra height) */
-  gap: 80px;               /* space between the stacked boxes */
-}
-
-.block .wrap {
-  width: 80%; 
-  display: flex; 
-  align-items: center; 
-  gap: 32px; 
-  flex-wrap: wrap;
-}
-
-
-.block .wrap .content {
-  width: auto;
-  flex: 1 1 0;      /* text takes all remaining space */
-  min-width: 0;     /* lets long words/headings shrink instead of overflowing */
-}
-
-.block .wrap img {
-  flex: 0 0 30%;    /* image is 30% of the row, so it scales with the screen */
-  max-width: 320px; /* but never gets huge on wide monitors */
-  height: auto;
-  border-radius: 12px;
-}
-
-@media (max-width: 700px) {
-  .block .wrap {
-    width: 90%;
-    flex-direction: column-reverse;
-    gap: 20px;
-  }
-
-  .block .wrap .content {
-    flex: none;
-    width: 100%;
-  }
-
-  .block .wrap img {
-    flex: none; 
-    width: 60%;
-    max-width: 260px;
-  }
-}
-
-/* body!!!! CONTENT */
-.content {
-  width: 80%;
-  text-align: left;
-}
-
-.content h3{
-  font-size: x-large;
-}
-
-.content .title {
-  display: inline-block; 
-  border: 2px solid currentColor; 
-  color: #B3DEC1; 
-  border-radius: 999px; 
-  padding: 4px 16px; 
-  margin: 0 8px 8px 0;
-}
-
-.content .title:hover,
-.content .title:focus-visible {
-  color: #3bc469;
-}
-
-
-</style>
 
 <nav>
   <a href="#education">Education</a> <a href="#experience">Experience</a> <a href="#award">Awards</a> <a href="#project">Research</a> <a href="#contact">Contact</a>
 </nav>
 
 <body>
-<section class="block" id="top" style="background-color: #FEFFFE;">
+<section class="block" id="top">
+    <!-- spacer!!!! -->
+  <div style="height: 20px;"></div> 
   <div class="wrap">
     <div class="content">
-      <h1 class="rubik-text" style="padding-bottom: 0; margin-bottom: 0;">Brenda</h1> <h1 class="rubik-text" style="margin-top: 0; padding-top: 0;">Yu Chuen Lai</h1>
-      <a class="title">Biomedical Engineer</a> <a class="title">Bioinformatician</a> <a class="title">UI/UX Designer</a> <a class="title">Scientific writing</a>
+      <h1 style="padding-bottom: 0; margin-bottom: 0;">Brenda</h1> <h1 style="margin-top: 0; padding-top: 0;">Yu Chuen Lai</h1>
+      <p> Biomedical Engineer | Bioinformatician | UI/UX Designer | Scientific Writer </p>
     
       <p>Biomedical engineer with experience in biomaterials, molecular engineering, and computational modelling, focused on reducing the cost, waste, and animal use of biomedical research. Projects span synthetic biology for lower-cost infant formula, machine-learning-guided enzyme design with wet-lab validation for textile biodegradation, and brain phantom models that reduce reliance on human and animal testing. Skilled in academic research, data analysis & visualization, and scientific communication, with GMP-aligned research experience. Driven to make science less wasteful, healthcare more accessible, and discovery more collaborative.</p>
 
        <p style="font-size: small; color: gray;">Languages: English (native), Mandarin (native), Japanese (intermediate), Cantonese (novice)</p>
     </div>
-    <img src="https://drive.google.com/file/d/15eVHq6QD8mQ16UIbmWofu9Ek7V_h-n_W/view?usp=sharing" alt="profile-pic">
+    <img src="images/pfp.jpeg" alt="profile-pic">
   </div>
+      <!-- spacer!!!! -->
+  <div style="height: 10px;"></div> 
 </section>
 
-<section class="block" id="project" style="background-color: #891141; color: white;">
+<section class="block" id="project">
   <div class="content">
     <h3>Projects</h3>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1oObNJOzo3ZSQfBvVYp2CDYL-N9yR0d_E/view?usp=sharing">Fabricated brain phantom</a>: models temporal interference; pre-publication manuscript written, working towards publication</li>
+        <li><a href="https://drive.google.com/file/d/19x2AgefGgnU2rGU5tV-9Z_4seEmFVf4-/view?usp=sharing">Biomimetics brochure</a>: how the bee waggle dance inspires technology (printable brochure)</li>
+        <li><a href="https://drive.google.com/file/d/1cCCBAMvYH3qTa38HvvPystRBptXPM793/view?usp=sharing">Biomaterials presentation</a>: neuroreparative brain patch for regeneration after traumatic brain injury (symposium-style poster)</li>
+        <li><a href="https://drive.google.com/file/d/1fHxNMU_yhmx_PR73va771denP9G02Zbn/view?usp=sharing">Tissue regeneration poster</a>: alveolar regeneration and integration techniques (symposium-style poster)</li>
+        <li><a href="https://drive.google.com/file/d/1-V8itlwGt1YJjdF5t0oNTNPIC-G_yrzo/view?usp=sharing">Medical device coursework</a></li>
+        <li><a href="https://2025.igem.wiki/gems-taiwan/">iGEM 2025 @ GEMS Taiwan</a>: textile-degrading enzymes, targeting the global waste problem. Publication: <a href="https://doi.org/10.3389/fsysb.2026.1914536" target="_blank" rel="noopener">DOI 10.3389/fsysb.2026.1914536</a></li>
+        <li><a href="https://2024.igem.wiki/ucsc/home">iGEM 2024 @ UCSC</a>: DHA from seaweed, improving healthcare accessibility</li>
+        <li><a href="https://drive.google.com/drive/folders/1pCjiveqkgBgXCwdiahEYS6m4gZLlfXS0?usp=drive_link">Data visualisation portfolio</a></li>
+    </ul>
   </div>
 </section>
 
-<section class="block" id="education" style="background-color: #E5FCF5;">
+<section class="block" id="education" >
   <div class="content">
     <h3>Education</h3>
+    <ul>
+      <li>Imperial College London: MSc Biomedical Engineering (Biomaterials)	Sept 2025 to Sept 2026</li>
+      <p style="font-size: smaller;">Societies: Bioengineering Society, FemTech, Art Society</p>
+      <li>UC Santa Cruz (UCSC): BS Biomolecular Engineering and Bioinformatics	Sept 2021 to Aug 2024</li>
+      <p style="font-size: small;">Honors in Major, Dean's Award for Engineering Excellence ($100 prize; awarded to the top 50 undergraduate research projects), Dean's Honor List, Winter and Spring 2024, iGEM 2024 Wiki Lead, Early graduation, with the 2nd-heaviest course workload at UCSC</p>
+      <p style="font-size: smaller;">Societies: Taiwanese Student Association (TSA), Women in Science Society</p>
+      <li>TES: International Baccalaureate bilingual diploma (English and Mandarin)	2017 to 2021</li>
+      <p style="font-size: small;">Top grade (7) in HL Chemistry and HL Analysis and Approaches Mathematics; 6 in Physics, Duke of Edinburgh's International Award: Bronze and Silver</p>
+      <p style="font-size: smaller;">Varsity Volleyball, Basketball and Football</p>
+      <li>Boston University: AIM: Introduction to Experimental Psychology	2019</li>
+      <p style="font-size: small;">Three-week research course covering how to design and conduct experiments, collect and analyse data, and present findings, building communication skills.</p>
+    </ul>
   </div>
 </section>
 
-<section class="block" id="experience" style="background-color: #B3DEC1;">
+<section class="block" id="experience" >
   <div class="content">
     <h3>Technical Experience</h3>
-    <p> test test</p>
+    <h4>Molecular Engineering | 11 projects  ·  5 years of experience</h4>
+    <ul>
+      <li>Experienced in molecular CAD modelling tools (UCSF Chimera, PyMOL) and DNA visualisers (SnapGene, Geneious, ApE, Jalview)</li>
+      <li>Extensive experience in restriction enzyme cloning, Golden Gate assembly and Gibson assembly</li>
+      <li>Designed vectors for E. coli and cyanobacteria integration</li>
+      <li>Troubleshot entire cloning workflows, including plasmid purification, vector preparation, ligation, transformation, screening and sequencing</li>
+      <li>Designed and transfected plasmid DNA into NIH3T3 and A549 cells</li>
+      <li>Troubleshot the entire cell culture workflow, including seeding, passaging and evaluation via microscopy and flow cytometry; assessed transfection efficiency via fluorescence microscopy</li>
+      <p>Relevant courses:</p>
+      <p style="font-size: small;">BIOE70032: Tissue Engineering and Regenerative Medicine (Imperial), BME177: Engineering Stem Cells (UCSC)</p>
+    </ul>
+
+    <h4>Bioinformatics | 5 projects  ·  4 years of experience</h4>
+    <ul>
+      <li>With self-taught Python, coded three bioinformatics tools from scratch: a DNA sequence translator, an ORF finder and a unique subsequence analyser</li>
+      <li>Ran genomics-processing commands in UNIX using Hummingbird-based workflows</li>
+      <li>Designed and built a tool that modifies vector sequences, via synonymous mutations, for better compatibility with non-model restriction-modification (R-M) systems</li>
+      <li>Created a machine learning workflow with AlphaFold-based molecular modelling for thermostable recombinant protein discovery</li>
+      <li>Designed a machine learning tool with PyTorch for textile blend identification, in aid of biological degradation</li>
+      <p>Relevant courses:</p>
+      <p style="font-size: small;">BME110: Computational Biology Tools (UCSC), BME160: Research Programming in the Life Sciences (UCSC), BME163: Applied Visualization and Analysis of Scientific Data (UCSC)</p>
+    </ul>
+
+    <h4>Data Analysis and Processing | 8 projects  ·  3 years of experience</h4>
+    <ul>
+      <li>Extensive experience in data visualisation in Python with Pandas, StatsModels, NumPy, SciPy and Matplotlib</li>
+      <li>Produced 3D-printable CAD files of brain white and grey matter (Autodesk Fusion compatible) from MRI files using a FreeSurfer-based workflow</li>
+      <li>Analysed and mapped 1,000+ unstructured compound records to metabolic pathways in KEGG and visualised the results as heatmaps</li>
+      <li>Transformed unstructured biological data into a structured dataset to support a bootstrap-based analytical workflow</li>
+      <p>Relevant courses:</p>
+      <p style="font-size: small;">BIOE70037: Applied Inferential Statistics (Imperial), STAT206: Applied Bayesian Statistics (UCSC), STAT132: Classical and Bayesian Inference (UCSC)</p>
+    </ul>
+
+    <h4>UI/UX Developer/Designer | 3 years of experience</h4>
+    <ul>
+      <li>Self-taught developer with experience in HTML/CSS/JS, React, Figma, Procreate and Adobe Illustrator</li>
+      <li>Project 1: https://2024.igem.wiki/ucsc/</li>
+      <li>Project 2: https://2025.igem.wiki/gems-taiwan/</li>
+      <li>Project 3: You're looking at it!</li>
+    </ul>
+
+    <h4>Medical Regulation | 1 year of experience</h4>
+    <ul>
+      <li>ISO 13485 (Medical Devices), ISO 14971 (Risk Management), IEC 60601 (Electrical Safety)</li>
+      <li>Demonstrated competence in documentation in accordance with EU/UK standards in coursework at Imperial (grade: 95%)</li>
+    </ul>
   </div>
 
   <div class="content">
     <h3>Professional Experience</h3>
-    <p> lets say today the paragraph gets slightly longer how does the compiler react</p>
+    <p style="font-size: x-small;">*Note: iGEM labs work on annual topics, which supports a robust cycle of projects.</p>
+    <h4>GEMS Taiwan: Dry Lab Research Instructor | Feb 2025 to Feb 2026</h4> 
+    <ul>
+      <li>iGEM lab*; project-based management and timelining</li>
+      <li>Full-time role (1pm-9pm) with occasional weekend obligations</li>
+      <li>Maintained stakeholder relationships and remained available on call 24/7</li>
+      <li>Taught students (ages 13-18) molecular modelling, coding in HTML/CSS/JS/React, and scientific writing and documentation in accordance with GLP</li>
+      <li>Available to tutor AP (Advanced Placement) Biology, Chemistry, Math and Geography</li>
+    </ul>
+
+    <h4>Taipei Veterans General Hospital: Research Assistant |	Dec 2024 to Jan 2025</h4>
+    <ul>
+      <li>Full-time role (9am to 3pm) with workflow-controlled obligations</li> 
+      <li>highlights include cosmetic procedures for hair growth and development of  microneedle-adhesive patches for sample acquisition</li>
+      <li>Performed PCR and RT-PCR and analysed the resulting data</li>
+      <li>Analysed epidermal histology</li>
+      <li>Harvested cells from mice; maintained and passaged multi-cell cultures</li>
+    </ul>
+
+    <h4>Saltikov Lab, UCSC: Bioinformatician | Oct 2024 to Nov 2024</h4>
+    <ul>
+      <li>Part-time, mostly remote analysis</li>
+      <li>The lab focuses on upcycling microbes and biofilms from polluted areas for productive uses</li>
+      <li>Analysed and visualised unstructured data for trend discovery</li>
+    </ul>
+
+    <h4>Bernick Lab, UCSC: iGEM Team |	Nov 2023 to Oct 2024</h4>
+    <ul>
+      <li>iGEM lab*; full-time role with obligations on weekends and national holidays</li>
+      <li>Project-based documentation, with expertise in scientific writing</li>
+      <li>Led wiki documentation and the GitHub pipeline for the 2024 UCSC iGEM team</li>
+      <li>Prepared and maintained lab conditions, replenished reagents and managed the lab schedule</li>
+      <li>Supplemented web-lab workflow when needed</li>
+    </ul>
   </div>
 
   <div class="content">
     <h3>Volunteer & Intern Experience</h3>
-    <p>hopefully this is enough space in between ahh haha</p>
-  </div>
+    <h4>National Taiwan University Hospital: Summer Volunteer |	2017 to 2022</h4>
+    <ul>
+      <li>Supported patients in times of need; mostly a communication role, with duties in equipment delivery and bookkeeping</li>
+    </ul>
 
+    <h4>ZNOral Care: Fellowship	| Jul to Sept 2017</h4>
+    <ul>
+      <li>Shadowing fellowship to learn about operations and management at a local, privately owned dental practice</li>
+    </ul>
+
+    <h4>Harmony Home: Volunteer | 2014 to 2018</h4>
+    <ul>
+      <li>Volunteered 1 hour per month, helping with chores and supplies</li>
+      <li>Harmony Home is a non-profit supporting HIV-positive people with disabilities, recovering intravenous drug users, HIV-positive women released from prison, migrant workers and struggling foreigners and their children</li>
+    </ul>
+  </div>
 </section>
 
-<section class="block" id="award" style="background-color: #FEFFFE;">
+<section class="block" id="award" >
   <div class="content">
     <h3>Awards</h3>
+    <h4>Gold Medal, Top 10 HS Teams: iGEM 2025 @ GEMS Taiwan</h4>
+    <p>International Competition and Conference for Synthetic Biology</p>
+    <ul>
+      <li>Nominations in Best Village, Best Model, Best Measurement, Best Wiki, Best Education</li>
+    </ul>
+
+    <h4>Silver Medal: iGEM 2024 @ UCSC</h4>
+    <p>International Competition and Conference for Synthetic Biology</p>
+
+    <h4>Quake-Resistant Certificate: IDEERS 2019, Taiwan</h4>
+    <p>International Competition to Design Earthquake Resistant Model Buildings</p>
+    <ul>
+      <li>Inspired by Taiwan's frequent earthquakes and unique architectural solutions such as Taipei 101</li>
+      <li>Acquired essential problem-solving and engineering methods</li>
+    </ul>
   </div>
 </section>
 
-<section class="block" id="contact" style="background-color: #210124; color: white;">
+<section class="block" id="contact">
   <div class="content">
-    <h3>Contacts</h3>
+    <h3>Contact me!</h3>
+    <ul>
+      <p>Email: yuchuenlaii@gmail.com</p>
+    </ul>
+    <h4>check out @brendasbetas on Insta!</h3>
   </div>
 </section>
 </body>
