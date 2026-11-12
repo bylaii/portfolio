@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brenda Lai | After Hours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- data-mode="night" = after hours theme. index.html uses data-mode="day". -->
+<body data-mode="night">
+
+<!-- animated forest background, drawn by script.js -->
+<div class="scene" aria-hidden="true"></div>
+
+<nav>
+  <a class="nav-home" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 28" aria-hidden="true"><rect x="10.5" y="23" width="3" height="5" rx="1" fill="#8a5636"/><path d="M12 1l5.5 8H15l5 7.5h-3L22 24H2l5-7.5H4L9 9H6.5Z" fill="currentColor"/></svg></a>
+  <div class="nav-links">
+    <a href="#craft">Craft</a>
+    <a href="#notes">Field notes</a>
+    <a href="#contact">Contact</a>
+    <div class="mode-switch" aria-label="Switch between working hours and after hours">
+      <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M5 5l1.8 1.8M17.2 17.2L19 19M5 19l1.8-1.8M17.2 6.8L19 5"/></svg>Working hours</a>
+      <span class="on" aria-current="page"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>After hours</span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HEADER: same layout as index.html, only the words change ===== -->
+<header class="hero" id="top">
+  <div class="hero-card">
+    <div>
+      <p class="prompt"><b>~/after-hours</b> $ whoami</p>
+      <h1><span class="line">Brenda</span><span class="line">Yu Chuen Lai</span></h1>
+      <ul class="chips">
+        <li>Crafter</li>
+        <li>Climber</li>
+      </ul>
+      <!-- DRAFT BIO: written from your working-hours bio, rewrite it in your own voice -->
+      <p>This side of the site is where I keep track of what I'm doing at the moment: crochet, embroidery, or whatever craft I've picked up lately. Follow along if you want :) </p>
+      <p>It is also going to be more like a blog: I am trying to start a documentation of all the conferences, collaborations and networking I get up to. This is going to be more fun and light hearted! 𖡼.𖤣𖥧𖡼.𖤣𖥧</p>
+      <p class="small">Current hobbies: rock climbing, knitting, and sketching.</p>
+    </div>
+    <figure class="portrait">
+      <div class="frame"><img src="images/afterhours.jpg" alt="Brenda scrambling over coastal rocks with climbing gear"></div>
+      <figcaption>FIG. 1 — the adventurer</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== CRAFT: the tiles are built from CRAFT_PROJECTS in data.js ===== -->
+<section class="panel" id="craft">
+  <div class="sec-head"><span class="idx">01</span><h2>Craft</h2></div>
+  <div id="craft-projects"></div>
+</section>
+
+
+<!-- ===== FIELD NOTES: built from FIELD_NOTES in data.js ===== -->
+<section class="panel" id="notes">
+  <div class="sec-head"><span class="idx">02</span><h2>Field notes</h2></div>
+  <p class="small">Conferences, collaborations and networking, with reflections after attending.</p>
+  <div class="notes" id="field-notes"></div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER: the drawing is added by script.js; edit the contact text here ===== -->
+<footer id="contact">
+  <div class="footer-scene"></div>
+  <div class="footer-body">
+    <div class="footer-inner">
+      <h2>Get in Touch!</h2>
+      <p><a href="https://drive.google.com/file/d/1rraGAYvFzT1uF0n7W42QNHDMal0X2oJL/view?usp=drive_link" target="_blank" rel="noopener">Link to CV (summary)</a></p>
+      <p>Email: yuchuenlaii[at]gmail[dot]com °‧ 𓆝 𓆟 𓆞 ·｡</p>
+      <p>check out @brendasbetas on Insta!</p>
+      <p class="tiny">Website dates | First edit: Oct 5th 2026 | Most recent edit: Nov 12th 2026</p>
+      <p class="tiny">psst: click the bin</p>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
