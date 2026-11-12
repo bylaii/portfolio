@@ -114,6 +114,7 @@ const CRAFT_PROJECTS = [
 /* ---------- AFTER HOURS: conference / collaboration notes ----------
    link is optional: point it at a write-up when you have one.         */
 const FIELD_NOTES = [
+  { title: "Slush 2026", where: "Helsinki", text: "Notes coming soon.", link: "" },
   { title: "iGEM 2024", where: "Paris", text: "Notes coming soon.", link: "" },
   { title: "BABS 2024", where: "UC Berkeley", text: "Notes coming soon.", link: "" },
   { title: "OpenBio 2023", where: "Harvard", text: "Notes coming soon.", link: "" },
